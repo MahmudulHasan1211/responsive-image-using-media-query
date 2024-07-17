@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img responsive</title>
+    <style>
+        p{
+            font-size: 1em;;
+        }
+        body{
+            /* body max width and horizontal center align */
+            border: 1px solid skyblue;
+            max-width: 840px;
+            margin: 0 auto;
+        }
+
+        /* image fluid */
+        .twoi{
+            display: flex;
+           
+        }
+        .twoi div{
+            width:50%
+        }
+        .twoi img{
+            width: 100%;
+        }
+        @media screen and (max-width:576px) {
+            .twoi{
+                flex-direction: column-reverse;
+            }
+            .twoi div{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Responsive image</p>
+    </header>
+
+    <main>
+        <div class="twoi">
+             
+        <div>
+            <img src="tiger 1.cms" alt="">
+        </div>
+        <div>
+            <img src="tiger 2.jpg" alt="">
+        </div>
+
+    </div>
+    </main>
+</body>
+</html>
